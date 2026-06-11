@@ -1,0 +1,6 @@
+*.pem
+api_key_id
+.kalshi/
+__pycache__/
+data/snapshots/
+.venv/
