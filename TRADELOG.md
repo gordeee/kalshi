@@ -27,3 +27,30 @@ Passed on (documented so future sessions don't re-litigate):
 - Continent board / NOEURSA / host-KO markets: arithmetically consistent
   with champion board after fees; sell-side "arb" loses to taker fees and
   collateral drag.
+- KOR–CZE (KXWCGAME-26JUN11KORCZE): KOR 36/37, CZE 33/34, TIE 31/32 — within
+  ~0.5c of de-vigged FanDuel/bet365 consensus on every leg. No side taken.
+
+### Match result & exits (MEX 1–0-ish, settled YES ~20:45Z)
+
+| time  | fill | qty @ px | note |
+|-------|------|----------|------|
+| 18:37 | ALIENS exit complete | 824 @ 13.3 | $109.59 recovered, zero fees |
+| 18:35 | FTW buy complete | 100 @ 29.0 | $29.00 cost, GTC bid filled pre-kickoff |
+| 19:13 | MEX rung 1 | 60 @ 71 | filled ~1 min before the goal |
+| 19:14 | MEX rung 2 | 40 @ 78 | filled in the goal spike (69→85) |
+| 20:33 | MEX take-profit | 179 @ 97 | filled pre-whistle; gave up 3c×179=$5.37 vs settlement to kill void/overturn tail and free capital early |
+
+Day 1 close: cash $328.12, position 100 FTW-Y @ 29 (marked 27/28).
+Equity ≈ $356 vs $304 at handoff (+$52, +17%). MEX match P&L from 70.0 avg:
+60×1 + 40×8 + 179×27 = +$51.13 gross, $0 exit fees (all maker).
+
+Post-settlement board check (~20:45Z): GROUPWIN-26A MEX 69/70 (model fair
+~70-73 — inside noise, pass; also KOR-CZE tonight flips it ±5-7 either way).
+GROUPQUAL-26A MEX 98/99, KOR 73/74, CZE 71/72, RSA 18/19 — coherent
+(sum ≈ 2.62 ≈ 2 + P(3rd advances)). No euphoria overshoot materialized;
+MMs repriced in-play. Lesson: the fade-the-overshoot window is asymmetric —
+it shows up on upsets/panic, not on a favorite winning as expected.
+
+Next session: scan Group A boards vs KOR–CZE result (02:00Z kickoff; thin
+boards stay dislocated for hours — morning scan is fine), re-check FTW fair
+vs champion board, then June 12 slate (USA–PAR etc.) vs multi-book devig.
